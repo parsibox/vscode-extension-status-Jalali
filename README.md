@@ -13,4 +13,9 @@ press f5
 
 
 #install
- code --install-extension  .\jalali-date-statusbar-0.0.2.vsix
+ code --install-extension  .\jalali-date-statusbar-0.0.3.vsix
+
+OR
+
+
+https://marketplace.visualstudio.com/items?itemName=MohsenDavari.jalali-date-statusbar
