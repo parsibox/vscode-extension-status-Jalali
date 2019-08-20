@@ -28,3 +28,5 @@ https://marketplace.visualstudio.com/items?itemName=MohsenDavari.jalali-date-sta
 vsce package
 
 vsce publish
+
+![alt text](https://raw.githubusercontent.com/parsibox/vscode-extension-status-Jalali/master/icons/image1.png)
