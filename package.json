@@ -2,8 +2,9 @@
 	"name": "jalali-date-statusbar",
 	"displayName": "Jalali date  in status bar",
 	"description": "Show jalali date in the status bar",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "MohsenDavari",
+	"icon": "icons/jalaali.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/parsibox/vscode-extension-status-Jalali"
@@ -22,19 +23,15 @@
 	],
 
 	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extensions.mohsendavari.jalali-date-statusbar",
-				"title": "Jalali date  in status bar"
-			}
-		]
-	},
+
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"lint": "tslint -p ./",
 		"watch": "tsc -watch -p ./"
+	},
+	"dependencies": {
+		"moment-jalaali": "^0.8.3"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.32.0",
