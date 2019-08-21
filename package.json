@@ -2,7 +2,7 @@
 	"name": "jalali-date-statusbar",
 	"displayName": "Jalali date  in status bar",
 	"description": "Show jalali date in the status bar",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "MohsenDavari",
 	"icon": "icons/jalaali.png",
 	"repository": {
@@ -23,7 +23,19 @@
 	],
 
 	"main": "./out/extension.js",
-
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "show projectManager project list?",
+			"properties": {
+				"mohsendavari.jalali-date-statusbar.showProjectList": {
+					"type": "boolean",
+					"default": true,
+					"description": "show project list whene click on status bar"
+				}
+			}
+		}
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
