@@ -2,7 +2,7 @@
 	"name": "jalali-date-statusbar",
 	"displayName": "Jalali date  in status bar",
 	"description": "Show jalali date in the status bar",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"publisher": "MohsenDavari",
 	"icon": "icons/jalaali.png",
 	"repository": {
@@ -21,9 +21,35 @@
 	"activationEvents": [
 		"*"
 	],
-
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "extensions.mohsendavari.jalali-date-statusbar",
+				"title": "تاریخ را نمایش بده"
+			},
+			{
+				"command": "extensions.mohsendavari.jalali-date-statusbar-show-my-projects",
+				"title": "لیست پروژه های من را باز کن"
+			},
+			{
+				"command": "extensions.mohsendavari.jalali-date-statusbar-open-this-file-project",
+				"title": "پروژه این فایل را باز کن"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extensions.mohsendavari.jalali-date-statusbar-open-this-file-project"
+				},
+				{
+					"command": "extensions.mohsendavari.jalali-date-statusbar-show-my-projects"
+				},
+				{
+					"command": "extensions.mohsendavari.jalali-date-statusbar"
+				}
+			]
+		},
 		"configuration": {
 			"type": "object",
 			"title": "show projectManager project list?",
@@ -46,6 +72,8 @@
 		"moment-jalaali": "^0.8.3"
 	},
 	"devDependencies": {
+		"@types/moment-jalaali": "^0.7.4",
+		"@types/node": "^7.0.43",
 		"@types/vscode": "^1.32.0",
 		"moment-jalaali": "^0.8.3",
 		"typescript": "^3.5.1"

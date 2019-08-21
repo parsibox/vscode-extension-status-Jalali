@@ -30,3 +30,5 @@ vsce package
 vsce publish
 
 ![alt text](https://raw.githubusercontent.com/parsibox/vscode-extension-status-Jalali/master/icons/image1.png)
+
+![alt text](https://raw.githubusercontent.com/parsibox/vscode-extension-status-Jalali/master/icons/image2.png)
